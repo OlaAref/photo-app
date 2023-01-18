@@ -1,0 +1,11 @@
+<component name="libraryTable">
+  <library name="Gradle: org.springframework.boot:spring-boot-starter-freemarker:2.7.7">
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-freemarker/2.7.7/5e5e684a3b3375375d226b2639d6ea0dcc2fa99d/spring-boot-starter-freemarker-2.7.7.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-starter-freemarker/2.7.7/a7b9c01593dac7b6a18d597d6e739a8e3f8908fd/spring-boot-starter-freemarker-2.7.7-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

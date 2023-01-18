@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel>
+      <module name="AccountManagement" target="17" />
+      <module name="AccountManagement.main" target="17" />
+      <module name="AccountManagement.test" target="17" />
+      <module name="DiscoveryService" target="17" />
+      <module name="DiscoveryService.main" target="17" />
+      <module name="DiscoveryService.test" target="17" />
+      <module name="Users" target="17" />
+      <module name="Users.main" target="17" />
+      <module name="Users.test" target="17" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

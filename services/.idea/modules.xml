@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AccountManagement.iml" filepath="$PROJECT_DIR$/.idea/modules/AccountManagement.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AccountManagement.main.iml" filepath="$PROJECT_DIR$/.idea/modules/AccountManagement.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/AccountManagement.test.iml" filepath="$PROJECT_DIR$/.idea/modules/AccountManagement.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DiscoveryService.iml" filepath="$PROJECT_DIR$/.idea/modules/DiscoveryService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DiscoveryService.main.iml" filepath="$PROJECT_DIR$/.idea/modules/DiscoveryService.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/DiscoveryService.test.iml" filepath="$PROJECT_DIR$/.idea/modules/DiscoveryService.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Users.iml" filepath="$PROJECT_DIR$/.idea/modules/Users.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Users.main.iml" filepath="$PROJECT_DIR$/.idea/modules/Users.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/Users.test.iml" filepath="$PROJECT_DIR$/.idea/modules/Users.test.iml" />
+    </modules>
+  </component>
+</project>
