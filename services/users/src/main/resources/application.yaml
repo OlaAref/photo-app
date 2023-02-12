@@ -1,4 +1,5 @@
 server:
+  # PORT will be sent in CMD
   port: ${PORT:0}
 
 spring:
@@ -7,6 +8,22 @@ spring:
   devtools:
     restart:
       enabled: true
+  # H2 Config
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+      settings:
+        # enable remote access
+        web-allow-others: true
+  datasource:
+    url: jdbc:h2:mem:testdb
+    username: sa
+    password: sa
+    driver-class-name: org.h2.Driver
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect
+
 
 # setup eureka server settings
 eureka:
@@ -14,4 +31,5 @@ eureka:
     service-url:
       default-zone: http://localhost:8761/eureka
   instance:
+    # spring.application.instance_id will be sent in CMD
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}

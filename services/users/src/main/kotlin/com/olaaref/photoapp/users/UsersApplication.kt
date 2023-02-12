@@ -11,3 +11,4 @@ class UsersApplication
 fun main(args: Array<String>) {
 	runApplication<UsersApplication>(*args)
 }
+

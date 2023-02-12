@@ -4,12 +4,23 @@ server:
 spring:
   application:
     name: api-gateway
-  # automatically mapping
+
   cloud:
     gateway:
+      # automatically routing
       discovery:
         locator:
           enabled: true
+          lower-case-service-id: true
+      # manually routing
+#      routes:
+#        - id: users-status-check
+#          uri: lb://users-ws #load balance :// spring application name
+#          predicates:
+#            - Method=GET
+#            - Path= /users/status/checks
+#          filters:
+#            - RemoveRequestHeader= Cookie
 
 # setup eureka server settings
 eureka:
