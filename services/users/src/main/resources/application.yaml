@@ -24,6 +24,21 @@ spring:
   jpa:
     database-platform: org.hibernate.dialect.H2Dialect
 
+  config:
+    import: optional:configserver:http//localhost:8888
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
 
 # setup eureka server settings
 eureka:

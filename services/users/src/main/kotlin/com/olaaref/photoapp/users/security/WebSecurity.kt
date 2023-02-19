@@ -51,9 +51,7 @@ class WebSecurity @Autowired constructor(val passwordEncoder: BCryptPasswordEnco
             .headers()
                 .frameOptions().disable()
 
-            .and()
-            .csrf()
-                .disable()
+        http.csrf().disable()
 
         return http.build()
 

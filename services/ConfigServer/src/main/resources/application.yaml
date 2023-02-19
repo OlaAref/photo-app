@@ -1,0 +1,35 @@
+server:
+  port: 8888
+
+spring:
+  application:
+    name: ConfigServer
+
+  cloud:
+    bus:
+      enabled: true
+    config:
+      server:
+        git:
+          uri: https://github.com/OlaAref/PhotoAppConfiguration
+          username: olaaref1@gmail.com
+          password: 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
+          clone-on-start: true
+          default-label: main #default branch name
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+
+
+
+
+

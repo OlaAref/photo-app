@@ -21,6 +21,22 @@ spring:
 #            - Path= /users/status/checks
 #          filters:
 #            - RemoveRequestHeader= Cookie
+#            - RewritePath=/users-ws/(?<segment>/?.*), $\{segment}
+
+  config:
+    import: optional:configserver:http//localhost:8888
+
+  rabbitmq:
+    host: localhost
+    port: 5672
+    username: guest
+    password: guest
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
 
 # setup eureka server settings
 eureka:
