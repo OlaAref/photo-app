@@ -12,8 +12,8 @@ spring:
       server:
         git:
           uri: https://github.com/OlaAref/PhotoAppConfiguration
-          username: olaaref1@gmail.com
-          password: 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
+          username:
+          password:
           clone-on-start: true
           default-label: main #default branch name
 
