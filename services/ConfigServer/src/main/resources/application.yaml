@@ -4,12 +4,17 @@ server:
 spring:
   application:
     name: ConfigServer
+  profiles:
+    active: native #native file system
+
 
   cloud:
     bus:
       enabled: true
     config:
       server:
+        native:
+          searchLocations: file:///${user.home}/Desktop/Projects/Photo App/PhotoAppConfig/PhotoAppConfiguration
         git:
           uri: https://github.com/OlaAref/PhotoAppConfiguration
           username:
