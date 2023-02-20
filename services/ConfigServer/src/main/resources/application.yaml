@@ -34,7 +34,14 @@ management:
       exposure:
         include: "*"
 
+#enctyption
 
+encrypt:
+  keyStore:
+    type: jks
+    location: file:///${user.home}/Desktop/Projects/Photo App/PhotoAppConfig/PhotoAppConfiguration/key/apiEncryptionKey.jks
+    password: a1b2c3d4
+    alias: apiEncryptionKey
 
 
 

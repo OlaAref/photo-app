@@ -48,8 +48,3 @@ eureka:
   instance:
     # spring.application.instance_id will be sent in CMD
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
-
-# environment variables
-token:
-  expiration_time: 864000000
-  secret: hfgry463hf746hf573ydh475fhy5739hfgry463hf746hf573ydh475fhy57393ydh475fhy3ydh475fhy3ydh475fhy3ydh475fhy3ydh475fhy3ydh475fhy3ydh475fhy3ydh475fhy3ydh475fhy3ydh475fhy1475
