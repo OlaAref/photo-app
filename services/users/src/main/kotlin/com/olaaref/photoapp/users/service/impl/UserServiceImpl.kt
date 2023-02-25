@@ -2,6 +2,8 @@ package com.olaaref.photoapp.users.service.impl
 
 import com.olaaref.photoapp.users.dto.UserDto
 import com.olaaref.photoapp.users.dto.request.UserDetailsRequest
+import com.olaaref.photoapp.users.dto.response.UserDetailsResponse
+import com.olaaref.photoapp.users.infrastructure.albums.service.AlbumsService
 import com.olaaref.photoapp.users.model.User
 import com.olaaref.photoapp.users.repository.UserRepository
 import com.olaaref.photoapp.users.service.UserService
@@ -14,6 +16,7 @@ import java.util.UUID
 
 @Service
 class UserServiceImpl @Autowired constructor(val userRepository: UserRepository,
+                                             val albumsService: AlbumsService,
                                              val passwordEncoder: BCryptPasswordEncoder) : UserService {
 
     override fun createUser(userDetailsRequest: UserDetailsRequest): UserDto {
@@ -36,6 +39,12 @@ class UserServiceImpl @Autowired constructor(val userRepository: UserRepository,
             null -> throw UsernameNotFoundException(email)
             else -> return user.toUserDto()
         }
+    }
+
+    override fun getUserDetailsById(userId: String): UserDetailsResponse? {
+        val user = userRepository.findByUserId(userId)
+        val albums = albumsService.getAlbums(userId)
+        return user?.let { UserDetailsResponse(user.userId, user.firstName, user.lastName, user.email, albums) }
     }
 
     override fun loadUserByUsername(username: String?): UserDetails {
