@@ -35,7 +35,7 @@ class WebSecurity @Autowired constructor(val passwordEncoder: BCryptPasswordEnco
         http
             .authorizeHttpRequests()
                 .antMatchers("/**").permitAll()
-                .antMatchers("/h2-console/**", "/login").permitAll()
+                .antMatchers("/h2-console/**", "/login", "/actuator/**").permitAll()
                 .anyRequest().authenticated()
 
             .and()
