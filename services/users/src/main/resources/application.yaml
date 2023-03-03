@@ -33,6 +33,11 @@ spring:
     username: guest
     password: guest
 
+  zipkin:
+    base-url: http://localhost:9411
+    enabled: true
+
+
 management:
   endpoints:
     web:
@@ -48,3 +53,5 @@ eureka:
   instance:
     # spring.application.instance_id will be sent in CMD
     instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+

@@ -45,7 +45,8 @@ dependencies {
 
 	implementation("org.springframework.cloud:spring-cloud-starter-openfeign")
 
-
+	implementation("org.springframework.cloud:spring-cloud-sleuth-zipkin")
+	implementation("org.springframework.cloud:spring-cloud-starter-sleuth")
 
 
 }
