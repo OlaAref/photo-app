@@ -47,3 +47,7 @@ eureka:
     instance:
         # spring.application.instance_id will be sent in CMD
         instance-id: ${spring.application.name}:${spring.application.instance_id:${random.value}}
+
+logging:
+  file:
+      name: services/Albums/albums-ws.log
